@@ -49,9 +49,9 @@ app.use(session({
 app.use(fileMiddleware.single('avatar'))
 app.use(csrf())
 app.use(flash())
-app.use(helmet({
+/*app.use(helmet({
   contentSecurityPolicy: false
-}))
+}))*/
 app.use(varMiddleware)
 app.use(userMiddleware)
 
